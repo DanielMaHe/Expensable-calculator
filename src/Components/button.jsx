@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { colors } from "../assets/styles.css/colors";
+import { colors } from "../assets/styles/colors";
 import deleteButton from "../../src/assets/images/deleteButton.svg";
 import checkButton from "../assets/images/checkButton.svg";
 import equalButton from "../assets/images/equalButton.svg";
