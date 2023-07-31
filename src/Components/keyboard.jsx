@@ -118,3 +118,21 @@ export const columnStyle = css`
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 1px;
 `;
+
+export function Calculator({ children }) {
+  return (
+    <div
+      css={css`
+        display: grid;
+
+        max-width: 256px;
+        margin: 50px auto;
+        padding: 23px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      `}
+    >
+      {children}
+    </div>
+  );
+}
