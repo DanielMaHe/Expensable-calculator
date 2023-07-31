@@ -69,3 +69,27 @@ grid-column: 2;
 
 `,
 };
+
+export function Display({ children }) {
+  return (
+    <div
+      css={css`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 254px;
+        height: 50px;
+        background: ${colors.white};
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: ${colors.gray[600]};
+        text-align: center;
+        border: 1px solid #ebebeb;
+      `}
+    >
+      {children}
+    </div>
+  );
+}
