@@ -93,3 +93,28 @@ export function Display({ children }) {
     </div>
   );
 }
+
+export function Keyboard({ children }) {
+  return (
+    <div
+      css={css`
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        position: center;
+        width: 254px;
+        height: 203px;
+        background: ${colors.gray[200]};
+        gap: 1px;
+        border: 1px solid #ebebeb;
+      `}
+    >
+      {children}
+    </div>
+  );
+}
+
+export const columnStyle = css`
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1px;
+`;
